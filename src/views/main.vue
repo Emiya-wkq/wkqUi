@@ -14,6 +14,7 @@
                         <el-menu-item index="/bus" @click="jump('/bus')">bus</el-menu-item>
                         <el-menu-item index="/isWeChat" @click="jump('/isWeChat')">是否微信环境</el-menu-item>
                         <el-menu-item index="/confirm" @click="jump('/confirm')">确认框</el-menu-item>
+                        <el-menu-item index="/copyText" @click="jump('/copyText')">拷贝文字</el-menu-item>
                     </el-menu-item-group>
                     <el-menu-item-group title="UI组件">
                         <el-menu-item index="/countButton" @click="jump('/countButton')">倒计时按钮</el-menu-item>
@@ -30,7 +31,7 @@
             </el-menu>
         </GeminiScrollbar>
         <div class="routerBox" >
-            <router-view></router-view>
+            <router-view style="  padding-bottom: 40px;"></router-view>
         </div>
     </div>
 </template>

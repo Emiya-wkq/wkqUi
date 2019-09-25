@@ -71,7 +71,7 @@
   }
   .windowBox {
     width:300px;
-    min-height:100px ;
+    min-height:130px ;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -84,11 +84,11 @@
     padding: 0 10px;
     width: 100%;
     border-bottom: solid 1px #eee;
-    font-size: .35rem;
+    font-size: 12px;
   }
   .tips {
     padding: 0 10px;
-    font-size: .35rem;
+    font-size: 12px;
   }
   .bottom {
     padding: 5px 10px;
@@ -96,20 +96,21 @@
     flex-direction: row-reverse;
   }
   .bottom>div{
-    border-radius: .3rem;
+    border-radius: 6px;
   }
   .ok {
     text-align: center;
     padding: 5px 15px;
     background: rgb(245,0,87);
     color: white;
-    font-size: .35rem;
+    font-size: 12px;
+    border-radius: 6px;
   }
   .no {
     padding: 5px 15px;
     text-align: center;
     background: #ddd;
-    font-size: .35rem;
-    margin-right: .2rem;
+    font-size: 12px;
+    margin-right: 6px;
   }
 </style>
