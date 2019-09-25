@@ -8,7 +8,7 @@
                     @close="handleClose">
 
                     <el-menu-item index="/home" @click="jump('/home')">说明</el-menu-item>
-                    <el-menu-item index="/home" @click="jump('/use')">安装与使用</el-menu-item>
+                    <el-menu-item index="/use" @click="jump('/use')">安装与使用</el-menu-item>
                     <el-menu-item-group>
                         <template slot="title">实例方法</template>
                         <el-menu-item index="/bus" @click="jump('/bus')">bus</el-menu-item>

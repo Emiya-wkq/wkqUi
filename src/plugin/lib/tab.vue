@@ -72,16 +72,14 @@
     .tabBox{
         display: flex;
         justify-content: space-between;
-        height: 0.8rem;
         width: 100%;
-        font-size: .26rem;
+        font-size: 12px;
         background-color: white;
 
         left: 0;
         z-index: 1;
     }
     .tabBox li{
-        height: 0.8rem;
         flex-grow: 1;
         width: 0;
         display: flex;
