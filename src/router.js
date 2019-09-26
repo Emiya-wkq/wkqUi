@@ -48,6 +48,13 @@ let router = new Router({
                     // which is lazy-loaded when the route is visited.
                     component: () => import(/* webpackChunkName: "about" */ './views/confirm/confirm.vue'),
                 },{
+                    path: '/toast',
+                    name: 'toast',
+                    // route level code-splitting
+                    // this generates a separate chunk (about.[hash].js) for this route
+                    // which is lazy-loaded when the route is visited.
+                    component: () => import(/* webpackChunkName: "about" */ './views/toast/toast.vue'),
+                },{
                     path: '/copyText',
                     name: 'copyText',
                     // route level code-splitting
@@ -61,6 +68,13 @@ let router = new Router({
                     // this generates a separate chunk (about.[hash].js) for this route
                     // which is lazy-loaded when the route is visited.
                     component: () => import(/* webpackChunkName: "about" */ './views/sku/sku.vue'),
+                },{
+                    path: '/button',
+                    name: 'button',
+                    // route level code-splitting
+                    // this generates a separate chunk (about.[hash].js) for this route
+                    // which is lazy-loaded when the route is visited.
+                    component: () => import(/* webpackChunkName: "about" */ './views/button/button.vue'),
                 },{
                     path: '/countButton',
                     name: 'countButton',
@@ -82,6 +96,13 @@ let router = new Router({
                     // this generates a separate chunk (about.[hash].js) for this route
                     // which is lazy-loaded when the route is visited.
                     component: () => import(/* webpackChunkName: "about" */ './views/tab/tab.vue'),
+                },{
+                    path: '/upload',
+                    name: 'upload',
+                    // route level code-splitting
+                    // this generates a separate chunk (about.[hash].js) for this route
+                    // which is lazy-loaded when the route is visited.
+                    component: () => import(/* webpackChunkName: "about" */ './views/upload/upload.vue'),
                 },{
                     path: '/loading',
                     name: 'loading',

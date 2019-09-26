@@ -14,13 +14,16 @@
                         <el-menu-item index="/bus" @click="jump('/bus')">bus</el-menu-item>
                         <el-menu-item index="/isWeChat" @click="jump('/isWeChat')">是否微信环境</el-menu-item>
                         <el-menu-item index="/confirm" @click="jump('/confirm')">确认框</el-menu-item>
+                        <el-menu-item index="/toast" @click="jump('/toast')">轻提示</el-menu-item>
                         <el-menu-item index="/copyText" @click="jump('/copyText')">拷贝文字</el-menu-item>
                     </el-menu-item-group>
                     <el-menu-item-group title="UI组件">
+                        <el-menu-item index="/button" @click="jump('/button')">按钮</el-menu-item>
                         <el-menu-item index="/countButton" @click="jump('/countButton')">倒计时按钮</el-menu-item>
                         <el-menu-item index="/sku" @click="jump('/sku')">sku选择器</el-menu-item>
                         <el-menu-item index="/floatButton" @click="jump('/floatButton')">悬浮按钮</el-menu-item>
                         <el-menu-item index="/tab" @click="jump('/tab')">Tab选项卡</el-menu-item>
+                        <el-menu-item index="/upload" @click="jump('/upload')">上传图片</el-menu-item>
                     </el-menu-item-group>
                     <el-menu-item-group title="自定义指令">
                         <el-menu-item index="/loading" @click="jump('/loading')">loading</el-menu-item>

@@ -1,14 +1,17 @@
 <template>
     <div>
-        <h1 class="th1">确认框</h1>
-        <p class="tp">通过vue实例进行调用的确认框，实际项目中使用起来更为方便。</p>
+        <h1 class="th1">Toast</h1>
+        <p class="tp">轻提示，方便的对用户操作进行反馈。</p>
         <h2 class="th2">示例:</h2>
-        <button @click="confirm" style="padding: 2px 10px"> 点击弹出确认 </button>
+        <button @click="defClick" style="padding: 2px 10px"> 默认Toast </button>
+        <br/>
+        <input v-model="time" placeholder="设置toast存续时间" style="margin: 10px 10px 0 0;padding: 2px 10px"/>
+        <button @click="setClick" style="padding: 2px 10px"> 指定参数Toast </button>
         <h2 class="th2">template:</h2>
         <div class="code" style="color: #666">
             <pre>
 
-        &lt;button @click="confirm"&gt; 点击弹出确认 &lt;/button&gt;
+        &lt;button @click="confirm"&gt; 确认 &lt;/button&gt;
             </pre>
         </div>
         <h2 class="th2">js:</h2>
@@ -18,20 +21,17 @@
     export default {
         data() {
             return {
-
+                time: ''
             }
         },
         methods:{
-            confirm(){
-                this.$wConfirm({
-                    title: '消息',
-                    message: '你干啥？',
-                    cancel(){
-                         this.$wToast('没啥，点错了')
-                    },
-                    confirm(){
-                         this.$wToast('就是要点你')
-                    }
+            defClick(){
+                this.$wToast('此信息五秒后消失')
+            },
+            setClick () {
+                this.$wToast({
+                    content: `此消息${this.time}s后消失`,
+                    time: this.time
                 })
             }
         }
@@ -74,45 +74,46 @@
     export default {
         data() {
             return {
+                time: '',
                 Attributes:[
                     {
-                        attrName: 'title',
-                        explain: '确认框标题',
-                        attrType: 'String',
-                        optional: '--',
-                        defaultVal: '确认'
-                    },{
-                        attrName: 'message',
+                        attrName: 'content',
                         explain: '提示内容',
                         attrType: 'String',
                         optional: '--',
-                        defaultVal: '确认这样做吗？'
-                    },{
-                        attrName: 'cancel',
-                        explain: '取消回调',
-                        attrType: 'Function',
-                        optional: '--',
                         defaultVal: '--'
                     },{
-                        attrName: 'confirm',
-                        explain: '确认回调',
-                        attrType: 'Function',
+                        attrName: 'time',
+                        explain: '存在时间，单位为s',
+                        attrType: 'String',
                         optional: '--',
-                        defaultVal: '--'
+                        defaultVal: '5'
                     }
                 ]
             }
         },
+        mounted(){
+
+        },
         methods:{
+            defClick(){
+                this.$wToast('此信息五秒后消失')
+            },
+            setClick () {
+                this.$wToast({
+                    content: `此消息${this.time?this.time:5}s后消失`,
+                    time: this.time
+                })
+            },
             confirm(){
                 this.$wConfirm({
                     title: '消息',
                     message: '你干啥？',
                     cancel(){
-                        this.$wToast('没啥，点错了')
+                        alert('没啥，点错了')
                     },
                     confirm(){
-                        this.$wToast('就是要点你')
+                        alert('就是要点你')
                     }
                 })
             }

@@ -13,6 +13,7 @@
         Vue.use(wkqUi)
         import 'vue-wkq-ui/lib/wkqUi.css'
             </pre>
+        <h2 class="th2">文中的this均代表vue实例</h2>
 
     </div>
 </template>

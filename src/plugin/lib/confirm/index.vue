@@ -76,6 +76,8 @@
     flex-direction: column;
     background-color: white;
     justify-content: space-between;
+    border-radius: 5px;
+    padding: 5px;
   }
   .title {
     box-sizing: border-box;
@@ -101,7 +103,7 @@
   .ok {
     text-align: center;
     padding: 5px 15px;
-    background: rgb(245,0,87);
+    background: rgb(19,171,228);
     color: white;
     font-size: 12px;
     border-radius: 6px;

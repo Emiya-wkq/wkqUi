@@ -1,4 +1,5 @@
 import confirmView from '../plugin/lib/confirm/index.vue'
+import toastView from '../plugin/lib/toast.vue'
 
 const prototypeInt = Vue =>{
     Vue.prototype.$isWeiXin = function () {
@@ -42,6 +43,30 @@ const prototypeInt = Vue =>{
             $vm.confirm = object.confirm
         }
         $vm.visible = true
+    }
+    // 轻提示
+    Vue.prototype.$wToast = function (data) {
+        let $vm
+        const $view = Vue.extend(toastView)
+        $vm = new $view()
+        $vm.$mount()
+        document.body.appendChild($vm.$el)
+        if(typeof data === 'object') {
+            if (data.content) {
+                $vm.content = data.content
+            }
+            if (data.time) {
+                $vm.time = Number(data.time)
+            }
+            if(data.styleList){
+                $vm.styleList = data.styleList
+            }
+        } else {
+            $vm.content = data
+        }
+
+        $vm.show = true
+        $vm.init()
     }
 }
 export default prototypeInt

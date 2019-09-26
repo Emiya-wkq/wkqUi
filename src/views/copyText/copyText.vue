@@ -56,6 +56,7 @@
         methods:{
             copy(){
                 this.$wCopy(this.text)
+                this.$wToast('已复制到剪切板')
             }
         }
     }
