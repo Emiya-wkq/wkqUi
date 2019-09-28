@@ -3,15 +3,15 @@
         <h1 class="th1">Toast</h1>
         <p class="tp">轻提示，方便的对用户操作进行反馈。</p>
         <h2 class="th2">示例:</h2>
-        <button @click="defClick" style="padding: 2px 10px"> 默认Toast </button>
+        <w-button @click="defClick"> 默认Toast </w-button>
         <br/>
         <input v-model="time" placeholder="设置toast存续时间" style="margin: 10px 10px 0 0;padding: 2px 10px"/>
-        <button @click="setClick" style="padding: 2px 10px"> 指定参数Toast </button>
+        <w-button @click="setClick" style="margin-top: 10px"> 指定参数Toast </w-button>
         <h2 class="th2">template:</h2>
         <div class="code" style="color: #666">
             <pre>
 
-        &lt;button @click="confirm"&gt; 确认 &lt;/button&gt;
+        &lt;w-button @click="confirm"&gt; 确认 &lt;/w-button&gt;
             </pre>
         </div>
         <h2 class="th2">js:</h2>

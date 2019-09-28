@@ -62,6 +62,13 @@ let router = new Router({
                     // which is lazy-loaded when the route is visited.
                     component: () => import(/* webpackChunkName: "about" */ './views/copyText/copyText.vue'),
                 },{
+                    path: '/createPhoto',
+                    name: 'createPhoto',
+                    // route level code-splitting
+                    // this generates a separate chunk (about.[hash].js) for this route
+                    // which is lazy-loaded when the route is visited.
+                    component: () => import(/* webpackChunkName: "about" */ './views/createPhoto/createPhoto.vue'),
+                },{
                     path: '/sku',
                     name: 'sku',
                     // route level code-splitting
@@ -75,6 +82,20 @@ let router = new Router({
                     // this generates a separate chunk (about.[hash].js) for this route
                     // which is lazy-loaded when the route is visited.
                     component: () => import(/* webpackChunkName: "about" */ './views/button/button.vue'),
+                },{
+                    path: '/input',
+                    name: 'input',
+                    // route level code-splitting
+                    // this generates a separate chunk (about.[hash].js) for this route
+                    // which is lazy-loaded when the route is visited.
+                    component: () => import(/* webpackChunkName: "about" */ './views/input/input.vue'),
+                },{
+                    path: '/topNav',
+                    name: 'topNav',
+                    // route level code-splitting
+                    // this generates a separate chunk (about.[hash].js) for this route
+                    // which is lazy-loaded when the route is visited.
+                    component: () => import(/* webpackChunkName: "about" */ './views/topNav/topNav.vue'),
                 },{
                     path: '/countButton',
                     name: 'countButton',

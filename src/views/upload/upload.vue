@@ -7,7 +7,7 @@
             <div class="phoneMain">
                 <p class="bp" style="margin-bottom: 20px">将标签包裹在想要实现上传功能的标签外即可。</p>
                 <w-upload url="http://api.reallychoose.com/user/upload" method="post" fileName="multipartFile" @success="success">
-                    <button>上传</button>
+                    <w-button>上传</w-button>
                 </w-upload>
                 <p>成功后图片展示:</p>
                 <img v-if="imgPath" style="max-width: 150px" :src="imgPath"/>

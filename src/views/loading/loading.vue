@@ -8,9 +8,9 @@
                 我是背景
             </div>
         </div>
-        <div style="margin-top: 10px">
-            <button @click="loadingFlag=true">开启loading</button>
-            <button @click="loadingFlag=false">结束loading</button>
+        <div style="margin-top: 10px;display: flex">
+            <w-button @click="loadingFlag=true" style="margin-right: 10px">开启loading</w-button>
+            <w-button @click="loadingFlag=false">结束loading</w-button>
         </div>
         <p class="bp">tips：要保证希望覆盖的节点设置过position，不然可能会超出容器</p>
         <h2 class="th2">template:</h2>

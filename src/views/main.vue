@@ -16,9 +16,12 @@
                         <el-menu-item index="/confirm" @click="jump('/confirm')">确认框</el-menu-item>
                         <el-menu-item index="/toast" @click="jump('/toast')">轻提示</el-menu-item>
                         <el-menu-item index="/copyText" @click="jump('/copyText')">拷贝文字</el-menu-item>
+                        <el-menu-item index="/creatPhoto" @click="jump('/createPhoto')">截图(未完善)</el-menu-item>
                     </el-menu-item-group>
                     <el-menu-item-group title="UI组件">
                         <el-menu-item index="/button" @click="jump('/button')">按钮</el-menu-item>
+                        <el-menu-item index="/input" @click="jump('/input')">输入框</el-menu-item>
+                        <el-menu-item index="/topNav" @click="jump('/topNav')">顶部导航</el-menu-item>
                         <el-menu-item index="/countButton" @click="jump('/countButton')">倒计时按钮</el-menu-item>
                         <el-menu-item index="/sku" @click="jump('/sku')">sku选择器</el-menu-item>
                         <el-menu-item index="/floatButton" @click="jump('/floatButton')">悬浮按钮</el-menu-item>
@@ -27,6 +30,7 @@
                     </el-menu-item-group>
                     <el-menu-item-group title="自定义指令">
                         <el-menu-item index="/loading" @click="jump('/loading')">loading</el-menu-item>
+                        <el-menu-item index="/imgLoad" @click="jump('/imgLoad')">图片检测(未完成)</el-menu-item>
                     </el-menu-item-group>
                     <el-menu-item-group title="过滤器">
                         <el-menu-item index="/priceFilter" @click="jump('/priceFilter')">价格过滤器</el-menu-item>

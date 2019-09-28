@@ -3,12 +3,12 @@
         <h1 class="th1">确认框</h1>
         <p class="tp">通过vue实例进行调用的确认框，实际项目中使用起来更为方便。</p>
         <h2 class="th2">示例:</h2>
-        <button @click="confirm" style="padding: 2px 10px"> 点击弹出确认 </button>
+        <w-button @click="confirm"> 点击弹出确认 </w-button>
         <h2 class="th2">template:</h2>
         <div class="code" style="color: #666">
             <pre>
 
-        &lt;button @click="confirm"&gt; 点击弹出确认 &lt;/button&gt;
+        &lt;w-button @click="confirm"&gt; 点击弹出确认 &lt;/w-button&gt;
             </pre>
         </div>
         <h2 class="th2">js:</h2>

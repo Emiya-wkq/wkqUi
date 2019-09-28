@@ -1,3 +1,5 @@
+import html2canvas from 'html2canvas'
+
 import confirmView from '../plugin/lib/confirm/index.vue'
 import toastView from '../plugin/lib/toast.vue'
 
@@ -9,6 +11,17 @@ const prototypeInt = Vue =>{
         } else {
             return false
         }
+    }
+    Vue.prototype.$wCreatePhoto = function (el) {
+        // 截取dom为图片
+        return new Promise(function (resolve, reject) {
+            html2canvas(el,{
+                backgroundColor: null
+            }).then((canvas) => {
+                let dataURL = canvas.toDataURL("image/png");
+                resolve(dataURL)
+            });
+        })
     }
     // 拷贝文字
     Vue.prototype.$wCopy = function (code) {

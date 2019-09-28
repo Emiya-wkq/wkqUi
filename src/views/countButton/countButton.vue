@@ -34,7 +34,7 @@
                                 },300)
                             },
                             disableClick(time){
-                                alert(`请${time}s后再次尝试`)
+                                this.$wToast(`请${time}s后再次尝试`)
                             }
                         }
                     }
@@ -148,7 +148,7 @@
                 },300)
             },
             disableClick(time){
-                alert(`请${time}s后再次尝试`)
+                this.$wToast(`请${time}s后再次尝试`)
             }
         }
     }

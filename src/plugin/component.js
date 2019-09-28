@@ -8,15 +8,17 @@ import Button from '../plugin/lib/button'
 import CartButton from '../plugin/lib/cartButton'
 import Sku from '../plugin/lib/sku'
 import Upload from '../plugin/lib/upload/upload'
+import Input from '../plugin/lib/input'
 
 const componentInt = Vue =>{
     Vue.component('w-floatButton', CartButton)
     Vue.component('w-timeButton', TimeButton)
     Vue.component('w-button', Button)
+    Vue.component('w-input', Input)
     Vue.component('w-sku', Sku)
     Vue.component('w-tab', Tab)
     Vue.component('w-upload', Upload)
     Vue.component('BottomNav', BottomNav)
-    Vue.component('nav-bar', NavBar)
+    Vue.component('w-topNav', NavBar)
 }
 export default componentInt

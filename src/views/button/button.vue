@@ -3,45 +3,29 @@
         <h1 class="th1">按钮</h1>
         <p class="tp">本来不想造这种每家都有的轮子，但是原生button实在是太丑了……</p>
         <h2 class="th2">示例:</h2>
+        <w-button>
+            主要按钮
+        </w-button>
+        <h2 class="th2">失效按钮:</h2>
         <w-button disabled="disabled">
-
+            失效按钮
+        </w-button>
+        <h2 class="th2">按钮尺寸:</h2>
+        <w-button size="small">
+            small
+        </w-button>
+        <w-button size="big" style="margin-top: 10px">
+            big
         </w-button>
         <h2 class="th2">template:</h2>
         <div class="code" style="color: #666">
             <pre>
-                &lt;w-timeButton
-                :time="5"
-                @send="buttonClick"
-                @disableClick="disableClick"
-                ref="timeButton"
-                style="width: 100px"&gt;
-                &lt;/w-timeButton&gt;
+        &lt;w-button>
+            主要按钮
+        &lt;/w-button>
             </pre>
         </div>
-        <h2 class="th2">js:</h2>
-        <div class="code" style="color: #666">
-            <pre>
-                <code>
-                    export default {
-                        data() {
-                            return {}
-                        },
-                        methods:{
-                            buttonClick(){
-                                // 模拟网络请求
-                                setTimeout(()=>{
-                                    this.$refs.timeButton.next()
-                                },300)
-                            },
-                            disableClick(time){
-                                alert(`请${time}s后再次尝试`)
-                            }
-                        }
-                    }
-                </code>
-            </pre>
-        </div>
-        <p>tips: 需要通过ref来注册组件，点击后如果想开始倒计时需要调用组件上的next方法</p>
+        <p>tips: 可以接收原生button标签的全部属性和方法</p>
         <h2 class="th2">Attributes</h2>
         <el-table
                 :data="Attributes"
@@ -97,46 +81,30 @@
             return {
                 Attributes: [
                     {
-                        date: 'time',
-                        name: '总的倒计时时间',
-                        address: 'Number',
-                        optional: '--',
-                        defaultVal: '60'
-                    },{
-                        date: 'availableBgColor',
-                        name: '可点击状态下的背景颜色',
+                        date: 'type',
+                        name: '按钮类型',
                         address: 'String',
-                        optional: '--',
-                        defaultVal: '#ff4444'
+                        optional: 'main',
+                        defaultVal: 'main'
                     },{
-                        date: 'availableColor',
-                        name: '可点击状态下字体颜色',
+                        date: 'size',
+                        name: '按钮大小',
                         address: 'String',
-                        optional: '--',
-                        defaultVal: '#ffffff'
+                        optional: 'small big',
+                        defaultVal: 'small'
                     },{
-                        date: 'disableBgColor',
-                        name: '不可点击状态下的背景颜色',
-                        address: 'String',
-                        optional: '--',
-                        defaultVal: '#dddddd'
-                    },{
-                        date: 'disableColor',
-                        name: '不可点击状态下字体颜色',
-                        address: 'String',
-                        optional: '--',
-                        defaultVal: '#ffffff'
+                        date: 'disabled',
+                        name: '是否禁用',
+                        address: 'Boolean',
+                        optional: 'true false',
+                        defaultVal: 'false'
                     }
                 ],
                 Events:[{
-                    date: 'send',
-                    name: '用户点击按钮后触发的事件',
+                    date: 'click',
+                    name: '原生事件',
                     address: '--'
 
-                },{
-                    date: 'disableClick',
-                    name: '用户点击无效状态下按钮触发的事件',
-                    address: 'time (当前倒计时秒数)'
                 }]
             }
         },

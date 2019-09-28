@@ -11,7 +11,7 @@
             <div class="phoneMain">
                 <p><label>请输入要拷贝的文字: <input v-model="text"/></label></p>
 
-                <p style="margin-top: 10px"><button @click="copy">点击后粘贴查看</button></p>
+                <p style="margin-top: 10px"><w-button @click="copy">点击后粘贴查看</w-button></p>
             </div>
 
         </div>
@@ -20,7 +20,7 @@
             <pre>
 
         &lt;label>请输入要拷贝的文字: &lt;input v-model="text"/>&lt;/label>
-        &lt;button @click="copy">copy后粘贴查看&lt;/button>
+        &lt;w-button @click="copy">copy后粘贴查看&lt;/w-button>
             </pre>
         </div>
         <h2 class="th2">js:</h2>

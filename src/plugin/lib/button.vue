@@ -1,6 +1,10 @@
 <template>
-    <button class="buttonBox available" :disabled="disabled" v-bind="$attrs" :class="{mainButton: !disabled&&true,big: size==='big',disableButton:disabled}">
-        这是个按钮
+    <button class="buttonBox available"
+            :disabled="disabled"
+            v-bind="$attrs"
+            v-on="$listeners"
+            :class="{mainButton: !disabled&&type==='main',big: size==='big',small: size==='small',disableButton:disabled}">
+        <slot></slot>
     </button>
 </template>
 
@@ -10,7 +14,11 @@
         props:{
             size:{
                 type: String,
-                default: 'big'
+                default: 'small'
+            },
+            type:{
+                type: String,
+                default: 'main'
             },
             disabled: {
                 default: false
@@ -37,7 +45,6 @@
 
 <style scoped>
     .buttonBox{
-        width: auto;
         border-radius: .3rem;
         padding: 10px 20px;
         display: flex;
@@ -54,11 +61,19 @@
         border: none;
     }
     .big{
+        min-width: 95px;
         padding: 10px 20px;
         font-size: 14px;
     }
+    .small{
+        min-width: 75px;
+        padding: 7px 14px;
+        font-size: 12px;
+    }
     .disableButton{
-
+        border: none;
+        background-color: rgb(221,221,221);
+        color: #666;
     }
     .available:before{
         content: '';
