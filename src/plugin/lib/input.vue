@@ -2,8 +2,8 @@
     <div>
         <div style="display: flex">
             <div class="inputBox">
-                <label class="label">
-                    <slot name="label"></slot>
+                <label class="label" v-if="labelShow">
+                    <slot></slot>
                 </label>
                 <input class="input" :type="type"  v-bind="$attrs" v-on="$listeners"/>
             </div>
@@ -21,6 +21,10 @@
             type:{
                 type: String,
                 default: 'text'
+            },
+            labelShow:{
+                type: Boolean,
+                default: true
             },
             disabled: {
                 default: false

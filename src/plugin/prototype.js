@@ -16,7 +16,7 @@ const prototypeInt = Vue =>{
         // 截取dom为图片
         return new Promise(function (resolve, reject) {
             html2canvas(el,{
-                backgroundColor: null
+                //backgroundColor: null
             }).then((canvas) => {
                 let dataURL = canvas.toDataURL("image/png");
                 resolve(dataURL)

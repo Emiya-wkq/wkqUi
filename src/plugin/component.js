@@ -9,8 +9,10 @@ import CartButton from '../plugin/lib/cartButton'
 import Sku from '../plugin/lib/sku'
 import Upload from '../plugin/lib/upload/upload'
 import Input from '../plugin/lib/input'
+import IconFont from '../plugin/lib/fontIcon/fontIcon'
 
 const componentInt = Vue =>{
+    Vue.component('w-icon', IconFont)
     Vue.component('w-floatButton', CartButton)
     Vue.component('w-timeButton', TimeButton)
     Vue.component('w-button', Button)

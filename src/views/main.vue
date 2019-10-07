@@ -6,9 +6,15 @@
                     class="el-menu-vertical-demo"
                     @open="handleOpen"
                     @close="handleClose">
-
-                    <el-menu-item index="/home" @click="jump('/home')">说明</el-menu-item>
-                    <el-menu-item index="/use" @click="jump('/use')">安装与使用</el-menu-item>
+                    <el-menu-item-group>
+                        <template slot="title">开始</template>
+                        <el-menu-item index="/home" @click="jump('/home')">说明</el-menu-item>
+                        <el-menu-item index="/use" @click="jump('/use')">安装与使用</el-menu-item>
+                    </el-menu-item-group>
+                    <el-menu-item-group>
+                        <template slot="title">字体图标</template>
+                        <el-menu-item index="/iconFont" @click="jump('/iconFont')">icon</el-menu-item>
+                    </el-menu-item-group>
                     <el-menu-item-group>
                         <template slot="title">实例方法</template>
                         <el-menu-item index="/bus" @click="jump('/bus')">bus</el-menu-item>
