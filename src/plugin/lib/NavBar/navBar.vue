@@ -16,7 +16,7 @@
 
 <script>
   export default {
-    name: 'navBar',
+    name: 'w-topNav',
     data(){
       return{
 

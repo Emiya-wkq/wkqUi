@@ -1,6 +1,6 @@
 import html2canvas from 'html2canvas'
 
-import confirmView from '../plugin/lib/confirm/index.vue'
+import confirmView from '../plugin/lib/Confirm'
 import toastView from '../plugin/lib/toast.vue'
 
 const prototypeInt = Vue =>{

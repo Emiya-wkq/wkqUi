@@ -1,7 +1,7 @@
-import Loading from './lib/Loading'
 
-const directiveInt = Vue =>{
-    // 自定义指令
+import Loading from './loading.vue'
+
+Loading.install = Vue => {
     let $vm
     const $view = Vue.extend(Loading)
     $vm = new $view()
@@ -34,4 +34,5 @@ const directiveInt = Vue =>{
         }
     })
 }
-export default directiveInt
+
+export default Loading

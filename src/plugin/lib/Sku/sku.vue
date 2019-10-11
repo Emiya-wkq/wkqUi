@@ -35,6 +35,7 @@
         return sarr
     }
     export default {
+        name: 'w-sku',
         props:{
           sku: Object,
           itemStyle: Object,

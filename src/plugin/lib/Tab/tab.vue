@@ -11,7 +11,7 @@
 
 <script>
   export default {
-    name: "tab",
+    name: "w-tab",
     props:{
       tabData:{
         type: Array

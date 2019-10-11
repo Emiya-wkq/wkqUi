@@ -22,7 +22,7 @@
     const DISTANCE_EDGE = 0
 
     export default {
-        name: 'vue-free-bubble',
+        name: 'w-floatButton',
         created() {
             this.touch = {}
         },

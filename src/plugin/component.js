@@ -1,26 +1,26 @@
 // 引入组件
 
-import BottomNav from '../plugin/lib/BottomNav.vue'
-import NavBar from '../plugin/lib/navBar.vue'
-import Tab from '../plugin/lib/tab.vue'
-import TimeButton from '../plugin/lib/timeButton'
-import Button from '../plugin/lib/button'
-import CartButton from '../plugin/lib/cartButton'
-import Sku from '../plugin/lib/sku'
-import Upload from '../plugin/lib/upload/upload'
-import Input from '../plugin/lib/input'
-import IconFont from '../plugin/lib/fontIcon/fontIcon'
+// import BottomNav from './lib/BottomNav'
+import NavBar from './lib/NavBar'
+import Tab from './lib/Tab'
+import TimeButton from './lib/TimeButton'
+import Button from './lib/Button'
+import CartButton from './lib/CartButton'
+import Sku from './lib/Sku'
+import Upload from './lib/Upload'
+import Input from './lib/Input'
+import IconFont from './lib/FontIcon'
 
 const componentInt = Vue =>{
-    Vue.component('w-icon', IconFont)
-    Vue.component('w-floatButton', CartButton)
-    Vue.component('w-timeButton', TimeButton)
-    Vue.component('w-button', Button)
-    Vue.component('w-input', Input)
-    Vue.component('w-sku', Sku)
-    Vue.component('w-tab', Tab)
-    Vue.component('w-upload', Upload)
-    Vue.component('BottomNav', BottomNav)
-    Vue.component('w-topNav', NavBar)
+    Vue.component(IconFont.name, IconFont)
+    Vue.component(CartButton.name, CartButton)
+    Vue.component(TimeButton.name, TimeButton)
+    Vue.component(Button.name, Button)
+    Vue.component(Input.name, Input)
+    Vue.component(Sku.name, Sku)
+    Vue.component(Tab.name, Tab)
+    Vue.component(Upload.name, Upload)
+    // Vue.component('BottomNav', BottomNav)
+    Vue.component(NavBar.name, NavBar)
 }
 export default componentInt

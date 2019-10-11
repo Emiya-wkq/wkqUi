@@ -3,6 +3,7 @@
             :disabled="disabled"
             v-bind="$attrs"
             v-on="$listeners"
+            :style="{backgroundColor:  !disabled ? bgColor : '', color: !disabled ? fColor : ''}"
             :class="{mainButton: !disabled&&type==='main',big: size==='big',small: size==='small',disableButton:disabled}">
         <slot></slot>
     </button>
@@ -10,11 +11,19 @@
 
 <script>
     export default {
-        name: "tab",
+        name: "w-button",
         props:{
             size:{
                 type: String,
                 default: 'small'
+            },
+            bgColor:{
+                type: String,
+                default: ''
+            },
+            fColor:{
+                type: String,
+                default: ''
             },
             type:{
                 type: String,

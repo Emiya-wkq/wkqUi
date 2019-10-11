@@ -86,7 +86,22 @@
                         address: 'String',
                         optional: 'main',
                         defaultVal: 'main'
-                    },{
+                    },
+                    {
+                        date: 'backgroundColor',
+                        name: '按钮背景色，配置后type所提供给的背景色失效',
+                        address: 'String',
+                        optional: '--',
+                        defaultVal: '--'
+                    },
+                    {
+                        date: 'fColor',
+                        name: '按钮文字色，配置后type所提供给的颜色失效',
+                        address: 'String',
+                        optional: '--',
+                        defaultVal: '--'
+                    },
+                    {
                         date: 'size',
                         name: '按钮大小',
                         address: 'String',

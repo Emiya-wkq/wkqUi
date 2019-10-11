@@ -11,6 +11,7 @@
 
 <script>
     export default {
+        name: 'w-upload',
         props:{
             // 是否传多张图
             uploadList:{

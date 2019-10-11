@@ -3,7 +3,7 @@
         <transition enter-active-class="animated fadeIn" leave-active-class="animated fadeOut" :duration="{ enter: 50, leave: 300 }">
             <div class="bg" v-if="show" :style="{height:height,background:bg}" @touchmove.prevent="">
                 <div class="box">
-                    <img src="../../assets/logo.png">
+                    <img src="../../../assets/logo.png">
                 </div>
                 <p :style="{color:textColor}">{{text}}</p>
             </div>

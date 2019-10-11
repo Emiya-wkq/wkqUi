@@ -13,7 +13,7 @@
 
 <script>
   export default {
-    name: "tab",
+    name: "w-timeButton",
     props:{
       time:{
         type: Number,
@@ -84,7 +84,6 @@
         width: auto;
         height: 30px;
         border-radius: .3rem;
-        padding: 0 .5rem;
         display: flex;
         align-items: center;
         justify-content: center;

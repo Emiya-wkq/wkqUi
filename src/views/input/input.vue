@@ -7,7 +7,7 @@
             <div class="phone" style="margin-right: 30px">
                 <div class="phoneMain" style="display: flex;justify-content: center;padding-top: 20px">
                     <w-input placeholder="请输入信息">
-                        <img src="../../assets/logo.png" style="width: 15px" slot="label"/>
+                        <img src="../../assets/logo.png" style="width: 15px"/>
                     </w-input>
                 </div>
 
