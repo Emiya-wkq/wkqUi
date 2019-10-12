@@ -12,11 +12,11 @@
                          style="width: 100%; margin: .3rem 0">
                     <p>v</p>
                 </w-input>
-                <w-input v-model="text" placeholder="请输入信息"
+                <w-input placeholder="请输入信息"
                          style="width: 100%; margin: .3rem 0">
                     <p>u</p>
                 </w-input>
-                <w-input v-model="text" placeholder="请输入信息"
+                <w-input placeholder="请输入信息"
                          style="width: 100%; margin: .3rem 0">
                     <p>e</p>
                 </w-input>

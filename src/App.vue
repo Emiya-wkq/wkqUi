@@ -61,9 +61,13 @@ export default {
 }
   /* 代码 */
   .code{
-    padding: 5px 10px;
+    padding: 20px;
     border-radius: 3px;
     background-color: #eee;
+    line-height: 22px;
+  }
+  .code pre{
+    color: #666;
   }
   /* 内容p */
   .bp{

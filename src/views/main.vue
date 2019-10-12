@@ -22,7 +22,7 @@
                         <el-menu-item index="/confirm" @click="jump('/confirm')">确认框</el-menu-item>
                         <el-menu-item index="/toast" @click="jump('/toast')">轻提示</el-menu-item>
                         <el-menu-item index="/copyText" @click="jump('/copyText')">拷贝文字</el-menu-item>
-                        <el-menu-item index="/creatPhoto" @click="jump('/createPhoto')">截图(未完善)</el-menu-item>
+                        <el-menu-item index="/createPhoto" @click="jump('/createPhoto')">截图(未完善)</el-menu-item>
                     </el-menu-item-group>
                     <el-menu-item-group title="UI组件">
                         <el-menu-item index="/button" @click="jump('/button')">按钮</el-menu-item>
