@@ -44,6 +44,6 @@
         transform: translate(-50%, -50%);
         word-break:break-word;
         z-index: 10;
-        max-width: 40%;
+        max-width: 70%;
     }
 </style>

@@ -10,6 +10,7 @@ import Sku from './lib/Sku'
 import Upload from './lib/Upload'
 import Input from './lib/Input'
 import IconFont from './lib/FontIcon'
+import Popup from './lib/Popup'
 
 const componentInt = Vue =>{
     Vue.component(IconFont.name, IconFont)
@@ -22,5 +23,6 @@ const componentInt = Vue =>{
     Vue.component(Upload.name, Upload)
     // Vue.component('BottomNav', BottomNav)
     Vue.component(NavBar.name, NavBar)
+    Vue.component(Popup.name, Popup)
 }
 export default componentInt
