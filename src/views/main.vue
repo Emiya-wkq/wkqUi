@@ -26,8 +26,8 @@
                     </el-menu-item-group>
                     <el-menu-item-group title="UI组件">
                         <el-menu-item index="/button" @click="jump('/button')">按钮</el-menu-item>
-                        <el-menu-item index="/input" @click="jump('/input')">输入框（文档未写）</el-menu-item>
-                        <el-menu-item index="/input" @click="jump('/popup')">弹出框</el-menu-item>
+                        <el-menu-item index="/input" @click="jump('/input')">输入框</el-menu-item>
+                        <el-menu-item index="/popup" @click="jump('/popup')">弹出框</el-menu-item>
                         <el-menu-item index="/topNav" @click="jump('/topNav')">顶部导航</el-menu-item>
                         <el-menu-item index="/countButton" @click="jump('/countButton')">倒计时按钮</el-menu-item>
                         <el-menu-item index="/sku" @click="jump('/sku')">sku选择器</el-menu-item>
@@ -37,7 +37,6 @@
                     </el-menu-item-group>
                     <el-menu-item-group title="自定义指令">
                         <el-menu-item index="/loading" @click="jump('/loading')">loading</el-menu-item>
-                        <el-menu-item index="/imgLoad" @click="jump('/imgLoad')">图片检测(未完成)</el-menu-item>
                     </el-menu-item-group>
                     <el-menu-item-group title="过滤器">
                         <el-menu-item index="/priceFilter" @click="jump('/priceFilter')">价格过滤器</el-menu-item>

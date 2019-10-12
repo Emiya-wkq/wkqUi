@@ -18,11 +18,9 @@
         <div class="code" style="color: #666">
             <pre>
 
-        &lt;w-topNav position="absolute" >
-            &lt;p slot="left" style="padding-left: 10px">&lt;/p>
-            &lt;p slot="center">导航&lt;/p>
-            &lt;p slot="right" style="padding-right: 10px">more&lt;/p>
-        &lt;/w-topNav>
+        &lt;w-input placeholder="请输入信息">
+            &lt;img src="../../assets/logo.png" style="width: 15px"/>
+        &lt;/w-input>
             </pre>
         </div>
         <h2 class="th2">Attributes</h2>
@@ -52,7 +50,7 @@
                     label="默认值">
             </el-table-column>
         </el-table>
-        <p class="bp" style="margin-top: 10px">tips: 开启占位请不要在外层设置padding,否则占位将会不准确</p>
+        <p class="bp" style="margin-top: 10px">tips: 支持原生input的属性</p>
         <h2 class="th2">Events</h2>
         <el-table
                 :data="Events"
@@ -81,45 +79,31 @@
             return {
                 Attributes: [
                     {
-                        date: 'background',
-                        name: '背景色',
+                        date: 'labelShow',
+                        name: '是否展示label，label内容通过slot展示',
                         address: 'String',
                         optional: '色值',
                         defaultVal: 'rgb(19,171,228)'
-                    }, {
-                        date: 'color',
-                        name: '字体颜色',
-                        address: 'String',
-                        optional: '色值',
-                        defaultVal: 'white'
-                    }, {
-                        date: 'position',
-                        name: '导航定位',
-                        address: 'String',
-                        optional: '推荐fixed与absolute',
-                        defaultVal: 'fixed'
-                    }, {
-                        date: 'borderBottom',
-                        name: '下边框',
-                        address: 'String',
+                    },
+                    {
+                        date: 'v-model',
+                        name: '同原生v-model用法',
+                        address: '--',
                         optional: '--',
-                        defaultVal: 'solid 1px #0E7CA7'
-                    }, {
-                        date: 'height',
-                        name: '高度',
-                        address: 'String',
-                        optional: '--',
-                        defaultVal: '40px'
-                    }, {
-                        date: 'placeholder',
-                        name: '占位',
-                        address: 'Boolean',
-                        optional: 'true false',
-                        defaultVal: 'true'
+                        defaultVal: '--'
                     }
                 ],
                 Events: [{
-                    date: 'click',
+                    date: 'blur',
+                    name: '原生事件',
+                    address: '--'
+                },{
+                    date: 'focus',
+                    name: '原生事件',
+                    address: '--'
+
+                },{
+                    date: 'change',
                     name: '原生事件',
                     address: '--'
 

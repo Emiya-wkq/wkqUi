@@ -23,7 +23,7 @@
             </div>
             <div slot="footer">
                 <div style="padding: 5px">
-                    <w-button @click="confirm" style="width: 100%">自定义footer</w-button>
+                    <w-button @click="customClick" style="width: 100%">自定义footer</w-button>
                 </div>
 
             </div>
@@ -203,6 +203,9 @@
         methods:{
             confirm(){
                 this.popupShow = true
+            },
+            customClick(){
+              this.$wToast('点击了自定义按钮')
             }
         }
     }
