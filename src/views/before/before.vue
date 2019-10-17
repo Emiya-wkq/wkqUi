@@ -1,5 +1,18 @@
 <template>
     <div>
+        <h1 class="th1">关于作者</h1>
+        <ul class="aboutMe">
+            <li>
+                作者：王的剑鞘（wkq）
+            </li>
+            <li>
+                微信号：w282294449
+            </li>
+            <li>
+                qq号：282294449
+            </li>
+            <li>一个兴趣使然的项目，欢迎纠错。加好友请备注github。</li>
+        </ul>
         <h1 class="th1">写在前面</h1>
         <p class="tp">本项目为个人项目,主要为解决日常开发的重复工作,并记录组件使用方法,整体无风格。其中包含常用的方法以及电商常用的组件。此组件愿景是减少重复工作并且可高度定制，以适应不同的设计风格。</p>
         <h2 class="th2">无风格</h2>
@@ -33,5 +46,9 @@
 <style scoped>
     h2{
         margin-top: 60px;
+    }
+    .aboutMe{
+        line-height: 28px;
+        font-size: 16px;
     }
 </style>

@@ -1,15 +1,15 @@
 <template>
     <div>
-        <h1 class="th1">按钮</h1>
-        <p class="tp">本来不想造这种每家都有的轮子，但是原生button实在是太丑了……</p>
+        <h1 class="th1">顶部导航</h1>
+        <p class="tp">体验过其他家的此组件，发现都需要在父元素添加padding，才能占位，所以就自己造了个自动占位的轮子。</p>
         <h2 class="th2">示例:</h2>
         <div style="display: flex">
             <div class="phone" style="margin-right: 30px">
                 <div class="phoneMain">
                     <w-topNav position="absolute" >
-                        <p slot="left" style="padding-left: 10px">&lt;</p>
-                        <p slot="center">导航</p>
-                        <p slot="right" style="padding-right: 10px">more</p>
+                        <p slot="left" style="padding-left: 10px;font-size: 14px;">&lt;</p>
+                        <p slot="center" style="font-size: 14px;">导航</p>
+                        <p slot="right" style="padding-right: 10px;font-size: 14px;">more</p>
                     </w-topNav>
                     <p>开启了占位</p>
                 </div>
@@ -18,9 +18,9 @@
             <div class="phone">
                 <div class="phoneMain">
                     <w-topNav position="absolute" :placeholder="false">
-                        <p slot="left" style="padding-left: 10px">&lt;</p>
-                        <p slot="center">导航</p>
-                        <p slot="right" style="padding-right: 10px">more</p>
+                        <p slot="left" style="font-size: 14px;padding-left: 10px">&lt;</p>
+                        <p slot="center" style="font-size: 14px;">导航</p>
+                        <p slot="right" style="font-size: 14px;padding-right: 10px">more</p>
                     </w-topNav>
                     <p style="z-index: 12;position: relative">关闭占位</p>
                 </div>

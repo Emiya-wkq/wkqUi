@@ -14,6 +14,7 @@
             </div>
 
         </div>
+        <p style="margin-top: 10px">tips:由于github不支持混合请求，此示例可能无效，可download后本地使用</p>
         <h2 class="th2">template:</h2>
         <div class="code" style="color: #666">
             <pre>

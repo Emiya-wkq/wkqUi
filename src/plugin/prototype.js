@@ -6,7 +6,7 @@ import toastView from '../plugin/lib/toast.vue'
 const prototypeInt = Vue =>{
     Vue.prototype.$isWeiXin = function () {
         let ua = window.navigator.userAgent.toLowerCase()
-        if (ua.match(/MicroMessenger/i) === 'micromessenger') {
+        if (ua.match(/MicroMessenger/i) == 'micromessenger') {
             return true
         } else {
             return false

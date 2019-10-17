@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1 class="th1">安装与使用</h1>
-        <p class="tp">使用npm安装此包，然后项目中进行注册后使用</p>
+        <p class="tp">使用npm安装此包，然后项目中进行注册后使用(当前不支持按需，下个大版本增加按需引入)</p>
         <h2 class="th2">npm安装</h2>
         <p class="code">
             npm i vue-wkq-ui -S
